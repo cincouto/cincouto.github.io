@@ -1,0 +1,478 @@
+ @import url("https://use.typekit.net/bfz5ayk.css");
+
+* {
+  margin:0;
+}
+
+/* NAVBAR section style */
+
+header {
+  /* height: 100px; */
+}
+
+nav {
+  background-color: white;
+  padding: 30px;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  /* border: 2px solid green; */
+  width: 30%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.4rem;
+  text-decoration: none;
+  color: #f48269;
+  font-size: 1.5rem;
+}
+
+#logo {
+  width:100%;
+}
+
+
+/*  ABOVE THE FOLD section style  */
+
+.above_the_fold {
+  /* padding: 50px 30px 0px 30px; */
+  /* min-height: 760px; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border:2px solid red; */
+}
+
+
+.arara {
+  width:40%;
+  /* min-width: 250px; */
+  /* border:2px solid blue; */
+  display:flex;
+  align-items: center;
+}
+
+#arara {
+  width: 100%;
+}
+
+.hello {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  width:40%;
+  color: #716564;
+  align-self: center;
+  padding-top: 160px;
+  padding-left: 50px;
+  /* border:2px solid red; */
+}
+
+h1 {
+  font-size: 35pt;
+  font-weight: 600;
+  letter-spacing: 15px;
+  /* border: 2.5px solid #f48269; */
+
+}
+
+.line {
+  background-color: #f48269;
+  height: 2.5px;
+  width: 238px;
+}
+
+article p {
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+
+/*  CREATIVE JOYRIDES section style */
+
+.work {
+  background-color: #EEEBEA;
+}
+
+.subheader h2 {
+  color: #716564;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 35pt;
+  font-weight: 600;
+  letter-spacing: 15px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* 2 autos = number of columns */
+  grid-gap: 70px;
+  /* or grid-gap: 10px or 10px 20px for diferent size gaps */
+  align-items: center;
+  padding:80px 150px;
+}
+
+
+.grid_image {
+  width:100%;
+  border-radius: 20px;
+  background-size: cover;
+  box-shadow: 0px 0px 4px 1px #4a46453a;
+  transition: all 0.5s linear;
+}
+
+figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+figcaption {
+  position: absolute;
+  left:0;
+  /* right:0; */
+  top:0;
+  /* bottom: 0; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  /* background-color: #F1614D; */
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+figcaption h3 {
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  /* border: 1px solid black; */
+}
+
+
+/* .grid_image:hover {
+  transform: scale(1.05);
+} */
+
+ /* --- To make both hovers work at the same time (remove grid_image:hover) above --- */
+
+figure:hover img {
+  transform: scale(1.05);
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  background-color: #f1604db8;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/* -----  WORK PAGE style ----- */
+.above_the_fold_work {
+  padding-left: 150px;
+  /* border:2px solid red; */
+  
+}
+
+.arara_work {
+  box-sizing: border-box;
+  /* border:2px solid red; */
+}
+
+.arara_work img {
+  width: 15%;
+  min-width: 150px;
+}
+
+
+
+
+/* ----- ABOUT PAGE style ----- */
+.above_the_fold_about {
+  padding-left: 250px;
+  /* border:2px solid red; */
+}
+
+.arara_about {
+  box-sizing: border-box;
+  /* border:2px solid red; */
+}
+
+.arara_about img {
+  width: 15%;
+  min-width: 150px;
+}
+
+
+
+/* story */
+
+.my_joyride {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 100px;
+}
+
+.portrait {
+  /* display: flex;*/  
+  /* Flex stretches the image */
+  /* border:2px solid red; */
+  width: 50%;
+}
+
+.portrait img {
+ width: 100%;
+
+}
+
+.about_me {
+  margin-left: 20px;
+  width: 40%;
+}
+
+.about_me p {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  color: #716564;
+  margin-top: 50px;
+  /* border:2px solid red; */
+}
+
+.about_me p:first-of-type {
+  margin-top: 0;
+}
+
+
+/* ----- CONTACT PAGE style */
+
+/* Arara */
+.above_the_fold_contact {
+  /* border:2px solid red; */
+  padding-left: 60%;
+}
+
+.arara_contact {
+  /* border:2px solid blue; */
+  
+}
+
+.arara_contact img {
+  width: 15%;
+  min-width: 150px;
+}
+
+/* --- */
+
+.contact_main {
+  background-color: #EEEBEA;
+
+}
+
+.form {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:2px solid red; */
+}
+
+label {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-size: 18pt;
+  color: #4A4645;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+input[type=text] {
+  border: none;
+  background-color: white;
+  width:300px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 7.5px 20px;
+  font-size: 18pt;
+  background-color: #F1614D;
+  border: none;
+  border-radius: 5px;
+}
+
+#message {
+  border: none;
+  background-color: white;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-size: 12pt;
+  color: #4A4645;
+  margin-top: 20px;
+}
+
+
+
+/* --------   FOOTER ---------*/
+
+footer {
+  min-height: 565px;
+  background-color: #4A4645;
+  display: flex;
+}
+
+.footer_header {
+  color:#FEF0E9;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 35pt;
+  font-weight: 600;
+  letter-spacing: 15px;
+  /* border: 2px solid red; */
+}
+
+.footer_content {
+  /* border: 2px solid white; */
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+}
+
+.footer_header {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 30px;
+  /* border: 2px solid blue; */
+}
+
+.social img{
+    /* border: 2px solid red; */
+    width: 20%;
+}
+
+#email_icon {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: end;
+}
+
+#my_email {
+    flex-grow: 2;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    /* border: 2px solid blue; */
+}
+
+#my_email a{
+  color: #FEF0E9;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  /* border: 2px solid blue; */
+
+}
+
+#be_icon {
+  padding: 0 80px;
+}
+
+
+/* Project page*/
+
+.proj_subheader h2{
+  color: #716564;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 2.19rem;
+  font-weight: 600;
+  letter-spacing: 15px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 50px 100px;
+}
+
+.proj_image {
+  margin-top: 50px;
+
+}
+
+.proj_image img {
+ width: 100%;
+ box-shadow: 0px 0px 4px 2px #4a46453a;
+}
+
+.proj_image p {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.3rem;
+  color: #f48269;
+  font-size: 1.2rem;
+  text-align: right;
+  padding-bottom: 15px;
+}
+
+.about_project {
+  /* margin-left: 20px; */
+  width: 60%;
+  margin:auto;
+}
+
+.about_project p {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  color: #716564;
+  margin-top: 50px;
+  /* border:2px solid red; */
+}
+
+.about_me p:first-of-type {
+  margin-top: 0;
+}

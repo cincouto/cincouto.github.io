@@ -1,0 +1,329 @@
+
+/* Media Queries - Breakpoints */
+
+
+
+@media only screen and (max-width:1010px) {
+
+  nav div {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:25%;
+  }
+
+  .nav_left {
+    align-items: center;
+  }
+
+  .nav_right {
+    align-items: center;
+  }
+
+  .nav_logo {
+    width:50%;
+  }
+
+  .footer_content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 10px;
+    /* border: 2px solid white; */
+  }
+
+  .footer_header {
+    text-align: center;
+    /* border: 2px solid white; */
+  }
+
+  .contact {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+  }
+
+  #email_icon {
+    width:30%;
+    display:flex;
+    flex-direction: row;
+    /*Change if necessary*/
+  }
+
+  #my_email {
+    width:40%;
+    padding: 0;
+    /* border: 2px solid white; */
+    text-align: left; 
+    /* Optional - to push to right */
+  }
+
+  .social {
+    /* border: 2px solid white; */
+      width:60%;
+      display:flex;
+      justify-content: space-between;
+      margin-top: 30px;
+  }
+  .social img {
+      width:100%;
+  }
+
+  #be_icon {
+    padding: 0px 40px;
+  }
+
+
+
+
+  /*  ARARA -- work section */
+
+  .above_the_fold_work {
+    padding-left: 30%;
+    /* border:2px solid red; */
+  }
+
+  .arara_work {
+    width: 100%;
+  }
+
+  .arara_work img {
+    width: 15%;
+    min-width: 150px;
+  }
+
+  /*  ARARA -- About section */
+  .above_the_fold_about {
+    padding-left:30%;
+  }
+
+  .arara_about {
+  width: 100%;
+  } 
+
+  .arara_about img {
+    width: 15%;
+    min-width: 150px;
+  }
+
+   /*  ARARA -- Contact section */
+  .above_the_fold_contact {
+    padding-right:30%;
+    /* border:2px solid red; */
+  }
+
+  .arara_contact {
+    width: 100%;
+  } 
+
+  .arara_contact img {
+    width: 15%;
+    min-width: 150px;
+  }
+
+
+
+/* My joyride section ABOUT ME */
+
+.my_joyride {
+  padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait {
+    display: flex;
+    flex-direction: column;
+  flex-wrap: wrap;
+  /* padding: 0px 10px; */
+  /* order:2px solid red; */
+  width: 100%;
+  margin: auto;
+}
+
+.portrait img {
+    width: 100%; 
+    /* Changed to 100 */
+}
+
+.about_me {
+  width: 100%;
+  margin:auto;
+}
+
+.about_me p:first-of-type {
+  margin-top: 50px;
+}
+
+
+@media only screen and (max-width:750px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .nav_left {
+    order:2;
+    width:50%;
+    height: 150px;
+    padding: 20px 0;
+    background-color: #EEEBEA;
+  }
+  .nav_right {
+    order:3;
+    width:50%;
+    height: 150px;
+    padding: 20px 0;
+    background-color: #EEEBEA;
+  }
+
+  .nav_logo {
+    order:1;
+    width:100%;
+   }
+
+  nav div {
+  width: 100%;
+  }
+
+  .above_the_fold {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #logo {
+    /* margin: 30px 0; */
+    padding: 30px 0;
+  }
+
+  .hello {
+    margin-top: 20px;
+    width:80%;
+    align-self: center;
+  }
+
+  .arara {
+    margin-top: 60px;
+    width:80%;
+    align-self: center;
+  }
+
+  /* Work Page */
+
+  /*  ARARA -- work section */
+
+  .above_the_fold_work {
+    padding-left: 35%;
+    /* border:2px solid red; */
+  }
+
+  .arara_work {
+    flex-grow: 2;
+  }
+
+  .arara_work img {
+    width: 15%;
+    min-width: 150px;
+  }
+
+  /* Grid */
+
+  .grid_container {
+    grid-gap: 50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:60px 60px;
+  }
+  .grid_image {
+    /* width:90%; */
+    width: 100%;
+    /* border:2px solid red; */
+    /
+  }
+
+ /* hover effect on grid image */
+ figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+ figcaption {
+  position: absolute;
+  left:0;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  /* background-color: #F1614D; */
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+figcaption h3 {
+  padding: 5px 20px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+
+
+
+  .work {
+    padding-bottom: 80px;
+  }
+
+  .footer_content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+    /* border: 2px solid blue; */
+  }
+
+  .footer_header {
+    text-align: center;
+    /* border: 2px solid white; */
+  }
+
+  .contact {
+    justify-content: center;
+    /* border: 2px solid white; */
+  }
+
+  #my_email {
+      /* margin: 30px 0; */
+      width:90%;
+    padding: 0;
+      text-align: center;
+      margin-top:10px;
+    /* border: 2px solid white; */
+  }
+
+  .social {
+    /* justify-content: space-between; */
+    /* border: 2px solid white; */
+  }
+
+  #be_icon {
+    padding: 0px 40px;
+  }
+ 
+
+}
